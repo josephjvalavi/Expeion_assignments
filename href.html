@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <a onclick="return test(event);"   href="https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp">click1</a>/ -->
+    <a    href="https://getbootstrap.com/docs/4.0/components/carousel/">click1</a>
+    <a   href="https://www.vecteezy.com/search?qterm=flight-images&content_type=image">click1</a>
+    <a  href="https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp">click1</a>
+        <ul id="list">
+            <li ></li>
+        </ul>
+    <script>
+
+document.querySelectorAll("a").forEach(e =>{
+        e.addEventListener('click',function(event) {
+            event.preventDefault();
+        var h=event.target.getAttribute('href');
+        console.log(h);
+        document.getElementById('list').innerHTML+=`<li>${h}</li>`;
+        
+
+            
+
+            
+        })
+
+    })
+    // function stop(){
+    //     // return false;
+    //     // var s=document.getElementById("c1")
+
+    // //    var c1= document.querySelectorAll("c1")
+    
+
+
+
+
+    // }
+    // function test(e){
+    //     e.preventDefault();
+    // }
+</script>
+
+</body>
+</html>
